@@ -32,6 +32,7 @@
 		2EBD87AF25E4ED4B00691AA3 /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87AC25E4ED4B00691AA3 /* BaseNavigation.swift */; };
 		2EBD87B025E4ED4B00691AA3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87AD25E4ED4B00691AA3 /* AppSettings.swift */; };
 		2EBD87B125E4ED4B00691AA3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87AE25E4ED4B00691AA3 /* BaseViewController.swift */; };
+		2EBD87B825E4F00D00691AA3 /* HideNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87B725E4F00D00691AA3 /* HideNavigationViewController.swift */; };
 		90DF7942B0FC5A18B2AB5681 /* Pods_Guitar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF3480243F7D6573FE7A05 /* Pods_Guitar.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		2EBD87AC25E4ED4B00691AA3 /* BaseNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
 		2EBD87AD25E4ED4B00691AA3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		2EBD87AE25E4ED4B00691AA3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2EBD87B725E4F00D00691AA3 /* HideNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNavigationViewController.swift; sourceTree = "<group>"; };
 		3838A5F50B4554236BF07B47 /* Pods-Guitar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guitar.debug.xcconfig"; path = "Target Support Files/Pods-Guitar/Pods-Guitar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				2EBD878525E4ECE900691AA3 /* Servies */,
 				2EBD879325E4ED2000691AA3 /* Extension */,
 				2EBD87AB25E4ED4B00691AA3 /* Common */,
+				2EBD87B425E4EE4800691AA3 /* Modules */,
 				2E5E64B225E4E37C007716AF /* AppDelegate.swift */,
 				2E5E64B425E4E37C007716AF /* SceneDelegate.swift */,
 				2E5E64B625E4E37C007716AF /* ViewController.swift */,
@@ -167,8 +170,17 @@
 				2EBD87AC25E4ED4B00691AA3 /* BaseNavigation.swift */,
 				2EBD87AD25E4ED4B00691AA3 /* AppSettings.swift */,
 				2EBD87AE25E4ED4B00691AA3 /* BaseViewController.swift */,
+				2EBD87B725E4F00D00691AA3 /* HideNavigationViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		2EBD87B425E4EE4800691AA3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			path = "Modulé";
 			sourceTree = "<group>";
 		};
 		4ED1F1F46B82F9B2105E973E /* Frameworks */ = {
@@ -339,6 +351,7 @@
 				2EBD87A525E4ED2100691AA3 /* ViewExtension.swift in Sources */,
 				2EBD879125E4ECE900691AA3 /* RealmManageModel.swift in Sources */,
 				2EBD87A225E4ED2100691AA3 /* ViewControllerExtension.swift in Sources */,
+				2EBD87B825E4F00D00691AA3 /* HideNavigationViewController.swift in Sources */,
 				2EBD878F25E4ECE900691AA3 /* ReadJson.swift in Sources */,
 				2E5E64B525E4E37C007716AF /* SceneDelegate.swift in Sources */,
 				2EBD878E25E4ECE900691AA3 /* ErrorTracker.swift in Sources */,
@@ -418,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -473,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -35,90 +35,90 @@ class RealmManage {
         print("schemaVersion after migration:\(RLMRealmConfiguration.default().schemaVersion)")
         RLMRealm.default()
     }
-    func addModelToRealm(foodModel: FoodModel? = nil, gravyModel: FoodModel? = nil) {
-        var itemAdd: Object?
-        
-        if let food = foodModel {
-            itemAdd = FoodRealm.init(model: food)
-        }
-        
-        if let gravy = gravyModel {
-            itemAdd = GravyRealm.init(model: gravy)
-        }
-        
-        guard let item = itemAdd else {
-            return
-        }
-
-        try! realm.write {
-            realm.add(item)
-            self.getFoodModel()
-            self.getGravyModel()
-        }
-    }
-    
-    func getFoodModel() -> [FoodModel] {
-        let listDiaryRealm = self.getRealm(ofType: FoodRealm.self)
-        var listDiaryModel: [FoodModel] = []
-        for m in listDiaryRealm {
-            guard let model = m.foodData?.toCodableObject() as FoodModel? else{
-                return []
-            }
-            listDiaryModel.append(model)
-        }
-        ListFoodStreaIpl.share.listFood = listDiaryModel
-        return listDiaryModel
-    }
-    
-    func getGravyModel() -> [FoodModel] {
-        let listDiaryRealm = self.getRealm(ofType: GravyRealm.self)
-        var listDiaryModel: [FoodModel] = []
-        for m in listDiaryRealm {
-            guard let model = m.foodData?.toCodableObject() as FoodModel? else{
-                return []
-            }
-            listDiaryModel.append(model)
-        }
-        ListFoodStreaIpl.share.listGravy = listDiaryModel
-        return listDiaryModel
-    }
-    
-    private func getRealm<T: Object>(ofType type: T.Type) -> [T] {
-        let list = realm.objects(T.self).toArray(ofType: T.self)
-        return list
-    }
-    
-    func deleteFood(food: FoodModel) {
-        let item = FoodRealm.init(model: food)
-        let items = self.getRealm(ofType: FoodRealm.self)
-        
-        guard items.count > 0 else {
-            return
-        }
-        
-        if let index = items.firstIndex(where: {$0.id == item.id}) {
-            try! realm.write {
-                realm.delete(items[index])
-                self.getFoodModel()
-            }
-        }
-    }
-    
-    func deleteGravy(gravy: FoodModel) {
-        let item = GravyRealm.init(model: gravy)
-        let items = self.getRealm(ofType: GravyRealm.self)
-        
-        guard items.count > 0 else {
-            return
-        }
-        
-        if let index = items.firstIndex(where: {$0.id == item.id}) {
-            try! realm.write {
-                realm.delete(items[index])
-                self.getGravyModel()
-            }
-        }
-    }
+//    func addModelToRealm(foodModel: FoodModel? = nil, gravyModel: FoodModel? = nil) {
+//        var itemAdd: Object?
+//        
+//        if let food = foodModel {
+//            itemAdd = FoodRealm.init(model: food)
+//        }
+//        
+//        if let gravy = gravyModel {
+//            itemAdd = GravyRealm.init(model: gravy)
+//        }
+//        
+//        guard let item = itemAdd else {
+//            return
+//        }
+//
+//        try! realm.write {
+//            realm.add(item)
+//            self.getFoodModel()
+//            self.getGravyModel()
+//        }
+//    }
+//    
+//    func getFoodModel() -> [FoodModel] {
+//        let listDiaryRealm = self.getRealm(ofType: FoodRealm.self)
+//        var listDiaryModel: [FoodModel] = []
+//        for m in listDiaryRealm {
+//            guard let model = m.foodData?.toCodableObject() as FoodModel? else{
+//                return []
+//            }
+//            listDiaryModel.append(model)
+//        }
+//        ListFoodStreaIpl.share.listFood = listDiaryModel
+//        return listDiaryModel
+//    }
+//    
+//    func getGravyModel() -> [FoodModel] {
+//        let listDiaryRealm = self.getRealm(ofType: GravyRealm.self)
+//        var listDiaryModel: [FoodModel] = []
+//        for m in listDiaryRealm {
+//            guard let model = m.foodData?.toCodableObject() as FoodModel? else{
+//                return []
+//            }
+//            listDiaryModel.append(model)
+//        }
+//        ListFoodStreaIpl.share.listGravy = listDiaryModel
+//        return listDiaryModel
+//    }
+//    
+//    private func getRealm<T: Object>(ofType type: T.Type) -> [T] {
+//        let list = realm.objects(T.self).toArray(ofType: T.self)
+//        return list
+//    }
+//    
+//    func deleteFood(food: FoodModel) {
+//        let item = FoodRealm.init(model: food)
+//        let items = self.getRealm(ofType: FoodRealm.self)
+//        
+//        guard items.count > 0 else {
+//            return
+//        }
+//        
+//        if let index = items.firstIndex(where: {$0.id == item.id}) {
+//            try! realm.write {
+//                realm.delete(items[index])
+//                self.getFoodModel()
+//            }
+//        }
+//    }
+//    
+//    func deleteGravy(gravy: FoodModel) {
+//        let item = GravyRealm.init(model: gravy)
+//        let items = self.getRealm(ofType: GravyRealm.self)
+//        
+//        guard items.count > 0 else {
+//            return
+//        }
+//        
+//        if let index = items.firstIndex(where: {$0.id == item.id}) {
+//            try! realm.write {
+//                realm.delete(items[index])
+//                self.getGravyModel()
+//            }
+//        }
+//    }
 }
 extension Results {
     func toArray<T>(ofType: T.Type) -> [T] {
