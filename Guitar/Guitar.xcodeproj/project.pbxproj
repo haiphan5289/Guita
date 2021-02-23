@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,25 @@
 		2E5E64BA25E4E37C007716AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E64B825E4E37C007716AF /* Main.storyboard */; };
 		2E5E64BC25E4E37F007716AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E64BB25E4E37F007716AF /* Assets.xcassets */; };
 		2E5E64BF25E4E37F007716AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E64BD25E4E37F007716AF /* LaunchScreen.storyboard */; };
+		2EBD878D25E4ECE900691AA3 /* ErrorMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD878625E4ECE900691AA3 /* ErrorMessageProtocol.swift */; };
+		2EBD878E25E4ECE900691AA3 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD878725E4ECE900691AA3 /* ErrorTracker.swift */; };
+		2EBD878F25E4ECE900691AA3 /* ReadJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD878825E4ECE900691AA3 /* ReadJson.swift */; };
+		2EBD879025E4ECE900691AA3 /* RealmManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD878A25E4ECE900691AA3 /* RealmManage.swift */; };
+		2EBD879125E4ECE900691AA3 /* RealmManageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD878C25E4ECE900691AA3 /* RealmManageModel.swift */; };
+		2EBD879F25E4ED2100691AA3 /* Obserable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879425E4ED2000691AA3 /* Obserable+Extension.swift */; };
+		2EBD87A025E4ED2100691AA3 /* UITapgesture+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879525E4ED2000691AA3 /* UITapgesture+Extension.swift */; };
+		2EBD87A125E4ED2100691AA3 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879625E4ED2000691AA3 /* UIWindow+Extension.swift */; };
+		2EBD87A225E4ED2100691AA3 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879725E4ED2000691AA3 /* ViewControllerExtension.swift */; };
+		2EBD87A325E4ED2100691AA3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879825E4ED2000691AA3 /* CustomButton.swift */; };
+		2EBD87A425E4ED2100691AA3 /* PropertyWapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879925E4ED2000691AA3 /* PropertyWapper.swift */; };
+		2EBD87A525E4ED2100691AA3 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879A25E4ED2000691AA3 /* ViewExtension.swift */; };
+		2EBD87A625E4ED2100691AA3 /* UIAllertVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879B25E4ED2000691AA3 /* UIAllertVC+Extension.swift */; };
+		2EBD87A725E4ED2100691AA3 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879C25E4ED2000691AA3 /* Font+Extension.swift */; };
+		2EBD87A825E4ED2100691AA3 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879D25E4ED2000691AA3 /* CodableExtension.swift */; };
+		2EBD87A925E4ED2100691AA3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD879E25E4ED2000691AA3 /* DateExtension.swift */; };
+		2EBD87AF25E4ED4B00691AA3 /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87AC25E4ED4B00691AA3 /* BaseNavigation.swift */; };
+		2EBD87B025E4ED4B00691AA3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87AD25E4ED4B00691AA3 /* AppSettings.swift */; };
+		2EBD87B125E4ED4B00691AA3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD87AE25E4ED4B00691AA3 /* BaseViewController.swift */; };
 		90DF7942B0FC5A18B2AB5681 /* Pods_Guitar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EF3480243F7D6573FE7A05 /* Pods_Guitar.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +46,25 @@
 		2E5E64BB25E4E37F007716AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5E64BE25E4E37F007716AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E5E64C025E4E37F007716AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBD878625E4ECE900691AA3 /* ErrorMessageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessageProtocol.swift; sourceTree = "<group>"; };
+		2EBD878725E4ECE900691AA3 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		2EBD878825E4ECE900691AA3 /* ReadJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadJson.swift; sourceTree = "<group>"; };
+		2EBD878A25E4ECE900691AA3 /* RealmManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManage.swift; sourceTree = "<group>"; };
+		2EBD878C25E4ECE900691AA3 /* RealmManageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManageModel.swift; sourceTree = "<group>"; };
+		2EBD879425E4ED2000691AA3 /* Obserable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Obserable+Extension.swift"; sourceTree = "<group>"; };
+		2EBD879525E4ED2000691AA3 /* UITapgesture+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapgesture+Extension.swift"; sourceTree = "<group>"; };
+		2EBD879625E4ED2000691AA3 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		2EBD879725E4ED2000691AA3 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		2EBD879825E4ED2000691AA3 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2EBD879925E4ED2000691AA3 /* PropertyWapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWapper.swift; sourceTree = "<group>"; };
+		2EBD879A25E4ED2000691AA3 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		2EBD879B25E4ED2000691AA3 /* UIAllertVC+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAllertVC+Extension.swift"; sourceTree = "<group>"; };
+		2EBD879C25E4ED2000691AA3 /* Font+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		2EBD879D25E4ED2000691AA3 /* CodableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
+		2EBD879E25E4ED2000691AA3 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		2EBD87AC25E4ED4B00691AA3 /* BaseNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
+		2EBD87AD25E4ED4B00691AA3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		2EBD87AE25E4ED4B00691AA3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3838A5F50B4554236BF07B47 /* Pods-Guitar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guitar.debug.xcconfig"; path = "Target Support Files/Pods-Guitar/Pods-Guitar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +101,9 @@
 		2E5E64B125E4E37C007716AF /* Guitar */ = {
 			isa = PBXGroup;
 			children = (
+				2EBD878525E4ECE900691AA3 /* Servies */,
+				2EBD879325E4ED2000691AA3 /* Extension */,
+				2EBD87AB25E4ED4B00691AA3 /* Common */,
 				2E5E64B225E4E37C007716AF /* AppDelegate.swift */,
 				2E5E64B425E4E37C007716AF /* SceneDelegate.swift */,
 				2E5E64B625E4E37C007716AF /* ViewController.swift */,
@@ -72,6 +113,62 @@
 				2E5E64C025E4E37F007716AF /* Info.plist */,
 			);
 			path = Guitar;
+			sourceTree = "<group>";
+		};
+		2EBD878525E4ECE900691AA3 /* Servies */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD878625E4ECE900691AA3 /* ErrorMessageProtocol.swift */,
+				2EBD878725E4ECE900691AA3 /* ErrorTracker.swift */,
+				2EBD878825E4ECE900691AA3 /* ReadJson.swift */,
+				2EBD878925E4ECE900691AA3 /* Realm */,
+			);
+			path = Servies;
+			sourceTree = "<group>";
+		};
+		2EBD878925E4ECE900691AA3 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD878A25E4ECE900691AA3 /* RealmManage.swift */,
+				2EBD878B25E4ECE900691AA3 /* Model */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		2EBD878B25E4ECE900691AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD878C25E4ECE900691AA3 /* RealmManageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EBD879325E4ED2000691AA3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD879425E4ED2000691AA3 /* Obserable+Extension.swift */,
+				2EBD879525E4ED2000691AA3 /* UITapgesture+Extension.swift */,
+				2EBD879625E4ED2000691AA3 /* UIWindow+Extension.swift */,
+				2EBD879725E4ED2000691AA3 /* ViewControllerExtension.swift */,
+				2EBD879825E4ED2000691AA3 /* CustomButton.swift */,
+				2EBD879925E4ED2000691AA3 /* PropertyWapper.swift */,
+				2EBD879A25E4ED2000691AA3 /* ViewExtension.swift */,
+				2EBD879B25E4ED2000691AA3 /* UIAllertVC+Extension.swift */,
+				2EBD879C25E4ED2000691AA3 /* Font+Extension.swift */,
+				2EBD879D25E4ED2000691AA3 /* CodableExtension.swift */,
+				2EBD879E25E4ED2000691AA3 /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2EBD87AB25E4ED4B00691AA3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2EBD87AC25E4ED4B00691AA3 /* BaseNavigation.swift */,
+				2EBD87AD25E4ED4B00691AA3 /* AppSettings.swift */,
+				2EBD87AE25E4ED4B00691AA3 /* BaseViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		4ED1F1F46B82F9B2105E973E /* Frameworks */ = {
@@ -88,7 +185,6 @@
 				3838A5F50B4554236BF07B47 /* Pods-Guitar.debug.xcconfig */,
 				058CB649CC4F2682D212381C /* Pods-Guitar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -224,9 +320,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EBD87A325E4ED2100691AA3 /* CustomButton.swift in Sources */,
+				2EBD879F25E4ED2100691AA3 /* Obserable+Extension.swift in Sources */,
+				2EBD87B025E4ED4B00691AA3 /* AppSettings.swift in Sources */,
+				2EBD87AF25E4ED4B00691AA3 /* BaseNavigation.swift in Sources */,
+				2EBD87A825E4ED2100691AA3 /* CodableExtension.swift in Sources */,
 				2E5E64B725E4E37C007716AF /* ViewController.swift in Sources */,
+				2EBD87A725E4ED2100691AA3 /* Font+Extension.swift in Sources */,
+				2EBD87A925E4ED2100691AA3 /* DateExtension.swift in Sources */,
 				2E5E64B325E4E37C007716AF /* AppDelegate.swift in Sources */,
+				2EBD87A025E4ED2100691AA3 /* UITapgesture+Extension.swift in Sources */,
+				2EBD87A425E4ED2100691AA3 /* PropertyWapper.swift in Sources */,
+				2EBD87A125E4ED2100691AA3 /* UIWindow+Extension.swift in Sources */,
+				2EBD878D25E4ECE900691AA3 /* ErrorMessageProtocol.swift in Sources */,
+				2EBD87B125E4ED4B00691AA3 /* BaseViewController.swift in Sources */,
+				2EBD87A625E4ED2100691AA3 /* UIAllertVC+Extension.swift in Sources */,
+				2EBD879025E4ECE900691AA3 /* RealmManage.swift in Sources */,
+				2EBD87A525E4ED2100691AA3 /* ViewExtension.swift in Sources */,
+				2EBD879125E4ECE900691AA3 /* RealmManageModel.swift in Sources */,
+				2EBD87A225E4ED2100691AA3 /* ViewControllerExtension.swift in Sources */,
+				2EBD878F25E4ECE900691AA3 /* ReadJson.swift in Sources */,
 				2E5E64B525E4E37C007716AF /* SceneDelegate.swift in Sources */,
+				2EBD878E25E4ECE900691AA3 /* ErrorTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

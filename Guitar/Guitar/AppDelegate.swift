@@ -10,11 +10,14 @@ import UIKit
 @available(iOS 13.0, *)
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        let vc = ViewController()
+        let navi: UINavigationController = UINavigationController(rootViewController: vc)
+        window?.rootViewController = navi
+        window?.makeKeyAndVisible()
         return true
     }
 
